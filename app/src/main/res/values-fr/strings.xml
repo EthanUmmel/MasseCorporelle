@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="main_title">IMC Calculette</string>
+    <string name="main_taille">Entrer Taille</string>
+    <string name="main_poids">Entrer Poids</string>
+    <string name="main_hint_taille">Taille</string>
+    <string name="main_hint_poids">Poids</string>
+    <string name="main_cancel_bt">Annuler</string>
+    <string name="main_calcul_bt">Calculer</string>
+</resources>
