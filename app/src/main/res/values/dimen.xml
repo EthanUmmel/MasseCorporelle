@@ -5,6 +5,7 @@
 
     <!-- Dimension main activity -->
     <dimen name="main_img_size">100dp</dimen>
+    <dimen name="main_title_size">35sp</dimen>
     <dimen name="main_label_size">20dp</dimen>
 
     <!-- Dimension result activity -->
