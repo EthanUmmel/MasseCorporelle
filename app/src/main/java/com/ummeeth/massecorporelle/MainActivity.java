@@ -7,6 +7,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -133,5 +136,28 @@ public class MainActivity extends AppCompatActivity {
             textIMC = "Vous êtes VRAIMENT obèse";
         }
         return textIMC;
+    }
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.main_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch(item.getItemId()) {
+            case R.id.action_favorite:
+                //Do action
+                return true;
+            case R.id.action_delete:
+                //Do action
+                return true;
+            case R.id.action_setting:
+                //Do action
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 }
