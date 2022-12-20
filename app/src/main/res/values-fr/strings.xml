@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">MasseCorporelle</string>
     <string name="main_title">IMC Calculette</string>
     <string name="main_taille">Entrer Taille</string>
     <string name="main_poids">Entrer Poids</string>
@@ -7,4 +8,10 @@
     <string name="main_hint_poids">Poids</string>
     <string name="main_cancel_bt">Annuler</string>
     <string name="main_calcul_bt">Calculer</string>
+    <string name="result_annonce">Votre masse corporelle est de :</string>
+    <string name="result_IMC">40</string>
+    <string name="result_remarque">Vraiment pas terrible. Pense à faire du sport</string>
+    <string name="menu_favori">Favori</string>
+    <string name="menu_delete">Delete</string>
+    <string name="menu_configuration">Configuration</string>
 </resources>
