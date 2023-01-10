@@ -9,6 +9,7 @@
     tools:context=".MainActivity">
 
     <LinearLayout
+        android:id="@+id/linear_titre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:baselineAligned="false"
@@ -35,6 +36,7 @@
             android:text="@string/main_title" />
 
         <ImageView
+            android:id="@+id/main_logo"
             android:layout_width="@dimen/main_img_size"
             android:layout_height="@dimen/main_img_size"
             android:layout_gravity="center"
@@ -49,6 +51,7 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/text_taille"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/main_label_size"
@@ -77,6 +80,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
+            android:id="@+id/text_poids"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/main_label_size"

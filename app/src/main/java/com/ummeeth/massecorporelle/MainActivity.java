@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
 
         DecimalFormat nbreApresDecimal = new DecimalFormat("0.00");
         nbreApresDecimal.setMaximumFractionDigits(2);
-        return IMC = Float.parseFloat(nbreApresDecimal.format(IMC));
+        return Float.parseFloat(nbreApresDecimal.format(IMC));
     }
 
     private String textIMC(float IMC) {
