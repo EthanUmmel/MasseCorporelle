@@ -90,12 +90,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent resultActivity = new Intent(MainActivity.this, ResultActivity.class);
-                resultActivity.putExtra("valeurIMC", calculIMC(ET_saisieTaille, ET_saisiePoids));
-                resultActivity.putExtra("valeurIMCText", textIMC(calculIMC(ET_saisieTaille, ET_saisiePoids)));
-                startActivity(resultActivity);
                 float IMC = calculIMC(ET_saisieTaille, ET_saisiePoids);
                 String textIMC = textIMC(IMC);
+
+                Intent resultActivity = new Intent(MainActivity.this, ResultActivity.class);
+                resultActivity.putExtra("valeurIMC", IMC);
+                resultActivity.putExtra("valeurIMCText", textIMC);
+                startActivity(resultActivity);
 
                 Toast toast = Toast.makeText(getApplicationContext(), "Vous faîtes " + IMC + "kg/m²\n" + textIMC, Toast.LENGTH_SHORT);
                 toast.show();
@@ -114,8 +115,7 @@ public class MainActivity extends AppCompatActivity {
         float convertionCmM = Float.parseFloat(taille.getText().toString())/100;
         float IMC = Float.parseFloat(poids.getText().toString())/(convertionCmM*convertionCmM);
 
-        DecimalFormat nbreApresDecimal = new DecimalFormat("0.00");
-        nbreApresDecimal.setMaximumFractionDigits(2);
+        DecimalFormat nbreApresDecimal = new DecimalFormat("##,##");
         return Float.parseFloat(nbreApresDecimal.format(IMC));
     }
 

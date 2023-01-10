@@ -9,7 +9,7 @@
     <dimen name="main_label_size">20dp</dimen>
 
     <!-- Dimension result activity -->
-    <dimen name="result_IMC_size">100sp</dimen>
+    <dimen name="result_IMC_size">80sp</dimen>
     <dimen name="result_textsize">20sp</dimen>
 
     <!-- Dimension main activity format paysage -->

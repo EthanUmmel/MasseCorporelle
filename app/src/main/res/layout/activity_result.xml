@@ -8,7 +8,6 @@
     tools:context=".ResultActivity">
 
     <TextView
-        android:id="@+id/result_IMC"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_margin="@dimen/app_margin"
@@ -18,7 +17,7 @@
         android:textSize="@dimen/result_textsize" />
 
     <TextView
-        android:id="@+id/result_IMCText"
+        android:id="@+id/result_IMC"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_margin="@dimen/app_margin"
@@ -28,6 +27,7 @@
         android:textSize="@dimen/result_IMC_size" />
 
     <TextView
+        android:id="@+id/result_IMCText"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_margin="@dimen/app_margin"
