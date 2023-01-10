@@ -12,4 +12,7 @@
     <dimen name="result_IMC_size">100sp</dimen>
     <dimen name="result_textsize">20sp</dimen>
 
+    <!-- Dimension main activity format paysage -->
+    <dimen name="textSize_bt">15sp</dimen>
+    <dimen name="main_img_size_paysage">250dp</dimen>
 </resources>
