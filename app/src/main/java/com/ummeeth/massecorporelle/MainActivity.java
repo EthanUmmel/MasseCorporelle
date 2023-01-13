@@ -156,6 +156,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.action_setting:
                 //Do action
                 return true;
+            case R.id.action_about:
+                setContentView(R.layout.page_about);
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
